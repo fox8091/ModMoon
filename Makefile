@@ -72,7 +72,7 @@ LONG_NAME       := ModMoon: Mods Manager for 3DS
 #---------------------------------------------------------------------------------
 ARCH	:=	-march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 
-CFLAGS	:=	-g -Wall -Og -mword-relocations \
+CFLAGS	:=	-g -Wall -Wno-psabi -Og -mword-relocations \
 			-fomit-frame-pointer -ffunction-sections \
 			$(ARCH)
 
